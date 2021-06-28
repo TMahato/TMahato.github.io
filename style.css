@@ -13,6 +13,9 @@ h2{
     font-family: 'Benne', serif;
     font-family: 'Open Sans', sans-serif;
 }
+h3{
+    font-family: 'Roboto', sans-serif;
+}
 .navbar li{
     width: 300px;
     display: inline;
