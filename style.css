@@ -1,11 +1,15 @@
+*{
+  box-sizing: border-box;
+  list-style: none;
+}
 body{
-    background-color: rgb(163, 170, 170);
+    background-color: rgb(204, 207, 207);
     color: rgb(7, 51, 51);
 }
 body::selection{
     background-color:cyan;
     color:grey;
-  }
+}
 h1,li{
     color: rgb(92, 87, 23);
 }
@@ -16,22 +20,23 @@ h2{
 h3{
     font-family: 'Roboto', sans-serif;
 }
-.navbar li{
-    width: 300px;
-    display: inline;
-    color: aquamarine;
+nav{
+  display: flex;
+  background-color: rgb(94, 91, 91);
 }
-a{
-    color:red;
+nav a{
+  display:flex;
+  color: cyan;
+  text-decoration: none;
+  padding: 14px 20px;
+  float: left;
+  font-size: 100%;
+  font-weight: 700;
 }
-a:hover{
-    color: greyy;
-    background-color: aquamarine;
+.menu-btn:hover{
+  background-color: cyan;
+  color: rgb(94, 91, 91);
 }
-a:visited{
-    color:purple;
-}
-
 .title {
     text-transform: uppercase;
     font-family: 'gilroy', sans-serif;
