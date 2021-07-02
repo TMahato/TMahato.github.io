@@ -17,24 +17,22 @@ section {
 
 nav {
   display: flex;
-  height: 60px;
-  background-color: rgb(79, 161, 161);
+  
+  background-color: rgb(58, 128, 128);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-  
-  font-family: 'Roboto Mono', monospace;
-  flex: 1;
+nav a{
+  display:block;
+  color: yellow; 
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 14px 20px;
+  float: left;
   font-size: 1.2rem;
-  color: rgb(248, 220, 59); 
+  font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
   transition: all 0.2s;
 }
-
 nav a:hover{
   background: rgb(11, 83, 83);
   color: cyan;
@@ -81,6 +79,7 @@ h3 {
 
 .section__title--intro {
   font-weight: 400;
+  color:yellow;
 }
 
 .section__title--intro strong {
@@ -96,7 +95,7 @@ h3 {
 .section__subtitle--about {
   background: #087462;
   padding: .25em 1em;
-  font-family: --ff-secondary: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
   margin-bottom: 1em;
 }
 
