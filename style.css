@@ -97,6 +97,7 @@ h3 {
   padding: .25em 1em;
   font-family: 'Roboto Slab', serif;
   margin-bottom: 1em;
+  display: inline-block;
 }
 
 
@@ -108,10 +109,6 @@ h3 {
   box-shadow:  0.25em 0.25em 0.75em rgba(0,0,0,.25),
                0.125em 0.125em 0.25em rgba(0,0,0,.15);
   border-radius:50%;
-}
-
-.section__subtitle--intro {
-  display: inline-block;
 }
 
 @media (min-width: 600px) {
@@ -142,4 +139,74 @@ h3 {
       left: -1.5em;
       width: calc(100% + 1.5em);
   }
+}
+
+/* about */
+
+.about-me {
+  /*background-color: black;*/
+  background-image: url(img/simple.jpg); 
+  background-color: rgb(54, 12, 12);
+  background-size: cover;
+  /* background-blend-mode: multiply; */
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.section__title--about {
+  color: cyan;
+  position: relative;
+}
+
+.section__title--about::after {
+  content: '';
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: #fff;
+  opacity: 0.25;
+}
+
+.services {
+  margin-bottom: 4em;
+}
+
+.service {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+.service strong{
+  color: rgb(255, 68, 0);
+}
+
+@media (min-width: 800px) {
+  .services {
+      display: flex;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .service + .service {
+      margin-left: 2em;
+  }
+}
+
+.profile {
+  background-image: url(img/simple.jpg); 
+  background-color: rgb(54, 12, 12);
+  font-size: 1.25rem;
+  
+  border: none;
+}
+.profile a:hover{
+  background-color:black;
+  color: white;
+  text-decoration: none;
+}
+.profile a {
+  padding: 10px 0;
+  color: rgb(216, 169, 14);
 }
