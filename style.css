@@ -240,9 +240,18 @@ h3 {
   background: #fff;
   opacity: 0.25;
 }
+@media screen and (max-width: 750px){
+  .skill{
+    display: flex;
+      flex-direction: column;
+      padding: 10px 10px;
+  }
+  .skill div{
+    display: block;
+  }
+}
 
-/*footer*/
-
+/*CONTACT*/
 
 .contact-me{
   background-color: rgb(20, 4, 4);
@@ -272,9 +281,12 @@ h3 {
 }
 
 @media screen and (max-width: 700px){
-    .small_handle{
+    .contact-me{
         flex-direction: column;
         padding: 10px 10px;
+    }
+    .small_handle a{
+      display: block;
     }
 }
 
