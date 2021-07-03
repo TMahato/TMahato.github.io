@@ -251,6 +251,39 @@ h3 {
   }
 }
 
+/* hobbies */
+.hobbies{
+  background-image: url(img/hobbies.jpg);
+  background-attachment: fixed;
+  background-color: rgb(16, 34, 68);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.section__title--hobbies {
+  color: rgb(255, 171, 14);
+  position: relative;
+}
+.section__title--hobbies::after {
+  content: '';
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: #fff;
+  opacity: 0.25;
+}
+.hobbies .row{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.hobbies .color-change:hover{
+  color:rgb(57, 146, 197);
+}
+
+
 /*CONTACT*/
 
 .contact-me{
