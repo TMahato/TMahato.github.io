@@ -366,6 +366,9 @@ h3 {
       display:block;
       padding: 10px 10px;
   }
+  .hobbies .row .color-change{
+    padding:20px;
+  }
 }
 
 /*CONTACT*/
