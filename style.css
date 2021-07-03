@@ -282,7 +282,11 @@ h3 {
 .hobbies .color-change:hover{
   color:rgb(57, 146, 197);
 }
-
+@media screen and (max-width: 750px){
+  .hobbies .row{
+      display:block;
+  }
+}
 
 /*CONTACT*/
 
