@@ -291,6 +291,7 @@ h3 {
 /*skills*/
 .skill{
   background-color: rgb(16, 34, 68);
+  background-image: linear-gradient(to bottom, rgb(110, 31, 31) ,rgb(14, 28, 56));
   background-size: cover;
   color: cyan;
   text-align: center;
@@ -363,6 +364,7 @@ h3 {
 @media screen and (max-width: 750px){
   .hobbies .row{
       display:block;
+      padding: 10px 10px;
   }
 }
 
