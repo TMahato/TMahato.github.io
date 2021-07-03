@@ -23,14 +23,24 @@ Author : Tanmay Mahato
   
 </head>
 <body>
+                                            <!--Header-->
     <header>
-    <nav class="navbar">
-            <a class="menu-btn" href="#">Home</a>
-            <a class="menu-btn" href="#about">About Me</a>
-            <a class="menu-btn" href="#skills">Skills</a>
-            <a class="menu-btn" href="#hobbie">Hobbies</a>
-            <a class="menu-btn" href="#contact">Contact Me</a>
-    </nav> 
+      <div class="logo">
+          <img src="img/devjane.png" alt="">
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+              <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+              <li class="nav__item"><a href="#hobbie" class="nav__link">Hobbies</a></li>
+              <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
+
+          </ul>
+      </nav>
     </header>
 
                                           <!-- Introduction -->
@@ -104,5 +114,6 @@ Author : Tanmay Mahato
         </div>
     </section>
 
+    <script src="JS/index.js"></script>
 </body>
 </html>
