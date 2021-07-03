@@ -67,7 +67,7 @@ header {
 }
 
 .nav__link:hover {
-  color: cyan;
+  color: rgb(255, 136, 0);
 }
 
 .nav-toggle {
@@ -111,7 +111,7 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background: cyan;
+  background: yellow;
   width: 2em;
   height: 3px;
   border-radius: 1em;
