@@ -296,49 +296,121 @@ h3 {
 .service a i{
   margin: 3px;
 }
+
+
 /*skills*/
 .skill{
-  background-color: rgb(16, 34, 68);
-  background-image: linear-gradient(to bottom, rgb(110, 31, 31) ,rgb(14, 28, 56));
+  background-color: rgb(126, 127, 128);
+  background-image: linear-gradient(to bottom, rgb(110, 31, 31) ,rgb(14, 28, 56)); 
   background-size: cover;
   color: cyan;
-  
   font-family: 'Uchen', serif;
-  text-align: center;
 }
-.section__title--skill {
-  color: coral;
+ .section__title--skill {
+  color: rgb(204, 255, 0);
   position: relative;
-}
-.skill div{
-  display:inline;
-  text-decoration: none;
-  padding: 20px 50px;
-  margin-top: 20px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  font-family: 'Uchen', serif;
-  transition: all 0.2s;
-}
+  text-align: center;
+} 
+
+
 .section__title--skill::after {
   content: '';
   display: block;
   width: 2em;
   height: 1px;
-  margin: 0.5em auto 1em;
-  background: #fff;
+  margin: 0.2em auto 1em;
+  background: black;
   opacity: 0.25;
 }
-@media screen and (max-width: 750px){
+
+@keyframes load{
+  from {
+    width: 0%;
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%;
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%;
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%;
+  }
+}
+
+.skill .my-skill .bar{
+  background-color: rgb(25, 46, 81);
+  padding: 3px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  margin: 20px;
+  color: black;
+  font-weight: 700;
+  box-shadow: 0 0 10px #2187e7b3;
+  width: 1000px;
+}
+.skill .my-skill .bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 10s 0s;
+  -moz-animation: load 10s 0s;
+  -o-animation: load 10s 0s;
+}
+
+.skill .my-skill .bar.front-1::before{
+  background-color: rgb(69, 143, 211);
+}
+.skill .my-skill .bar.front-2::before{
+  background-color: coral;
+}
+.skill .my-skill .bar.back-1::before{
+  background-color: #264de4;
+}
+.skill .my-skill .bar.back-2::before{
+  background-color: yellow;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(95% - 10px);
+}
+
+
+
+
+
+/* @media screen and (max-width: 750px){
   .skill{
     display: flex;
       flex-direction: column;
       padding: 10px 10px;
   }
-  .skill div{
+  .skill .my-skill div{
     display: block;
   }
-}
+}  */
 
 /* hobbies */
 .hobbies{
