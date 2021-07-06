@@ -3,10 +3,9 @@
   list-style: none;
 }
 body{
-    background-color: rgb(81, 85, 85);
+    background-color: rgba(81, 85, 85)!important;
     color: rgb(234, 241, 241);
     margin: 0;
-    font-family: 'Lora', serif;
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -27,13 +26,15 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  background-image: linear-gradient(90deg,rgb(166, 166, 166),rgb(73, 75, 75));
+  /* height: 50px; */
 }
 
-.logo {
+.nav-logo {
   max-width: 100px;
 }
 
-.nav {
+.header__nav {
   position: fixed;
   background: black;
   color: cyan;
@@ -62,7 +63,7 @@ header {
   color: inherit;
   font-weight: 900;
   font-size: 2rem;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Uchen', serif;
   text-decoration: none;
 }
 
@@ -70,47 +71,47 @@ header {
   color: rgb(255, 136, 0);
 }
 
-.nav-toggle {
+.header__nav-toggle {
   padding: .5em;
   background: transparent;
   border: 0;
   cursor: pointer;
   position: absolute;
-  right: 1em;
+  right: 0.5em;
   top: 1em;
   z-index: 1000;
 }
 
-.nav-open .nav {
+.nav-open .header__nav {
   transform: translateX(0);
 }
 
-.nav-open .nav-toggle {
+.nav-open .header__nav-toggle {
   position: fixed;
 }
 
-.nav-open .hamburger {
+.nav-open .header__hamburger {
   transform: rotate(.625turn);
 }
 
-.nav-open .hamburger::before {
+.nav-open .header__hamburger::before {
   transform: rotate(90deg) translateX(-6px);
 }
 
-.nav-open .hamburger::after {
+.nav-open .header__hamburger::after {
   opacity: 0;
 }
 
 
 
-.hamburger {
+.header__hamburger {
   display: block;
   position: relative;
 }
 
-.hamburger,
-.hamburger::before,
-.hamburger::after {
+.header__hamburger,
+.header__hamburger::before,
+.header__hamburger::after {
   background: yellow;
   width: 2em;
   height: 3px;
@@ -119,16 +120,16 @@ header {
 }
 
 
-.hamburger::before,
-.hamburger::after {
+.header__hamburger::before,
+.header__hamburger::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.header__hamburger::before { top: 6px; }
+.header__hamburger::after { bottom: 6px; }
 
 
 img {
@@ -156,8 +157,10 @@ h3 {
 }
 
 .section__title--intro {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 3rem;
   color:yellow;
+  font-family: 'Uchen', serif;
 }
 
 .section__title--intro strong {
@@ -169,17 +172,16 @@ h3 {
   font-size: 1.25rem;
 }
 
-.section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--intro{
   background: #087462;
   padding: .25em 1em;
-  font-family: 'Roboto Slab', serif;
+  color: antiquewhite;
   margin-bottom: 1em;
   display: inline-block;
 }
 
 
-.intro {
+.intro-me {
   position: relative;
 }
 
@@ -190,7 +192,7 @@ h3 {
 }
 
 @media (min-width: 600px) {
-  .intro {
+  .intro-me {
       display: grid;
       width: min-content;
       margin: 0 auto;
@@ -217,21 +219,27 @@ h3 {
       left: -1.5em;
       width: calc(100% + 1.5em);
   }
+
 }
 
 /* about */
 
 .about-me {
-  /*background-color: black;*/
   background-image: url(img/simple.jpg);
   background-attachment: fixed;
   background-color: rgb(54, 12, 12);
   background-size: cover;
   color: rgb(255, 255, 255);
   text-align: center;
+  
+  font-family: 'Uchen', serif;
 }
 
-.section__title--about {
+.section__title--about,
+.section__title--skill,
+.section__title--hobbies {
+  font-size: 2.2rem;
+  font-weight: 500;
   color: cyan;
   position: relative;
 }
@@ -251,7 +259,7 @@ h3 {
 }
 
 .service {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   font-size: 1.5rem;
 }
@@ -274,7 +282,7 @@ h3 {
 
 .profile {
   background-image: url(img/simple.jpg); 
-  background-color: rgb(54, 12, 12);
+  background-color: rgb(77, 39, 26);
   font-size: 1.25rem;
   
   border: none;
@@ -294,10 +302,12 @@ h3 {
   background-image: linear-gradient(to bottom, rgb(110, 31, 31) ,rgb(14, 28, 56));
   background-size: cover;
   color: cyan;
+  
+  font-family: 'Uchen', serif;
   text-align: center;
 }
 .section__title--skill {
-  color: rgb(255, 166, 0);
+  color: coral;
   position: relative;
 }
 .skill div{
@@ -307,7 +317,7 @@ h3 {
   margin-top: 20px;
   font-size: 1.2rem;
   font-weight: 700;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Uchen', serif;
   transition: all 0.2s;
 }
 .section__title--skill::after {
@@ -338,6 +348,8 @@ h3 {
   background-size: cover;
   color: rgb(255, 255, 255);
   text-align: center;
+  
+  font-family: 'Uchen', serif;
 }
 .section__title--hobbies {
   color: rgb(255, 171, 14);
@@ -352,21 +364,21 @@ h3 {
   background: #fff;
   opacity: 0.25;
 }
-.hobbies .row{
+.hobbies .hobbies-row{
   width: 100%;
   display: flex;
   justify-content: space-around;
   
 }
-.hobbies .color-change:hover{
+.hobbies .hobbies-color-change:hover{
   color:rgb(57, 146, 197);
 }
 @media screen and (max-width: 750px){
-  .hobbies .row{
+  .hobbies .hobbies-row{
       display:block;
       padding: 10px 10px;
   }
-  .hobbies .row .color-change{
+  .hobbies .hobbies-row .hobbies-color-change{
     padding:20px;
   }
 }
@@ -378,6 +390,8 @@ h3 {
   background-size: cover;
   color: rgb(223, 6, 132);
   text-align: center;
+  
+  font-family: 'Uchen', serif;
 }
 
 
@@ -388,7 +402,7 @@ h3 {
   padding: 14px 30px;
   font-size: 1.2rem;
   font-weight: 700;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Uchen', serif;
   transition: all 0.2s;
 }
 
