@@ -344,7 +344,7 @@ h3 {
   }
 }
 
-.skill .my-skill .bar{
+.bar{
   background-color: rgb(25, 46, 81);
   padding: 3px;
   border-radius: 15px;
@@ -354,9 +354,9 @@ h3 {
   color: black;
   font-weight: 700;
   box-shadow: 0 0 10px #2187e7b3;
-  width: 1000px;
+  width: 90%;
 }
-.skill .my-skill .bar::before{
+.bar::before{
   content:  attr(data-skill);
   background-color: #f3b0ff;
   display: inline-block;
@@ -368,16 +368,16 @@ h3 {
   -o-animation: load 10s 0s;
 }
 
-.skill .my-skill .bar.front-1::before{
+.bar.front-1::before{
   background-color: rgb(69, 143, 211);
 }
-.skill .my-skill .bar.front-2::before{
+.bar.front-2::before{
   background-color: coral;
 }
-.skill .my-skill .bar.back-1::before{
+.bar.back-1::before{
   background-color: #264de4;
 }
-.skill .my-skill .bar.back-2::before{
+.bar.back-2::before{
   background-color: yellow;
 }
 
