@@ -10,3 +10,9 @@ navLinks.forEach(link => {
         document.body.classList.remove('nav-open');
     })
 })
+
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load",function(){
+    loader.style.display="none";
+})

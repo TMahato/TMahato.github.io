@@ -578,3 +578,13 @@ margin: 10px;
   background-color: white;
   color: black;
 }
+
+
+#preloader{
+  background: #101b21 url(img/tenor.gif) no-repeat center center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
