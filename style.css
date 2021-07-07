@@ -3,7 +3,8 @@
   list-style: none;
 }
 body{
-    background-color: rgba(81, 85, 85)!important;
+    /* background-color: rgba(81, 85, 85)!important; */
+    background: linear-gradient(to bottom,rgba(81, 85, 85),rgb(77, 17, 17));
     color: rgb(234, 241, 241);
     margin: 0;
     font-size: 1rem;
@@ -20,14 +21,14 @@ h2{
 }
 
 
+
 /*header*/
 
 header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background-image: linear-gradient(90deg,rgb(166, 166, 166),rgb(73, 75, 75));
-  /* height: 50px; */
+  background-image: linear-gradient(to right, rgb(166, 166, 166), rgba(81, 85, 85));
 }
 
 .nav-logo {
@@ -223,6 +224,7 @@ h3 {
 }
 
 
+
 /* about */
 
 .about-me {
@@ -238,7 +240,8 @@ h3 {
 
 .section__title--about,
 .section__title--skill,
-.section__title--hobbies {
+.section__title--hobbies,
+.section__title--edu {
   font-size: 2.2rem;
   font-weight: 500;
   color: cyan;
@@ -298,6 +301,36 @@ h3 {
   margin: 3px;
 }
 
+/*Education*/
+.container {
+  /* background-image: url(img/simple.jpg); */
+  /* background-attachment: fixed; */
+  /* background-color: rgb(54, 12, 12); */
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  
+  font-family: 'Uchen', serif;
+}
+.section__title--edu {
+  color: rgb(255, 0, 0);
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+} 
+.container{
+padding-top: 5rem;
+
+margin:30px;
+}
+#education{
+	padding-top: 5rem;
+  }
+  
+  #education .active{
+	background-color: #c15554;
+	border-color: #c15554;
+  }
+
 
 /*skills*/
 .skill{
@@ -345,7 +378,7 @@ h3 {
   }
 }
 
-.bar{
+.skill .my-skill .bar{
   background-color: rgb(25, 46, 81);
   padding: 3px;
   border-radius: 15px;
@@ -357,7 +390,7 @@ h3 {
   box-shadow: 0 0 10px #2187e7b3;
   width: 90%;
 }
-.bar::before{
+.skill .my-skill .bar::before{
   content:  attr(data-skill);
   background-color: #f3b0ff;
   display: inline-block;
@@ -369,16 +402,16 @@ h3 {
   -o-animation: load 10s 0s;
 }
 
-.bar.front-1::before{
+.skill .my-skill .bar.front-1::before{
   background-color: rgb(69, 143, 211);
 }
-.bar.front-2::before{
+.skill .my-skill .bar.front-2::before{
   background-color: coral;
 }
-.bar.back-1::before{
+.skill .my-skill .bar.back-1::before{
   background-color: #264de4;
 }
-.bar.back-2::before{
+.skill .my-skill .bar.back-2::before{
   background-color: yellow;
 }
 
@@ -399,6 +432,19 @@ h3 {
 }
 
 
+
+
+
+/* @media screen and (max-width: 750px){
+  .skill{
+    display: flex;
+      flex-direction: column;
+      padding: 10px 10px;
+  }
+  .skill .my-skill div{
+    display: block;
+  }
+}  */
 
 /* hobbies */
 .hobbies{
@@ -459,7 +505,7 @@ h3 {
 .contact-me span a{
   text-decoration: none;
   font-size: 1.5rem;
-  color: rgb(235, 148, 163);
+  color: rgb(175, 14, 14)
 }
 .contact-me span a:hover{
   color: rgb(223, 6, 132);
@@ -473,11 +519,10 @@ h3 {
   font-size: 1.2rem;
   font-weight: 700;
   font-family: 'Uchen', serif;
-  transition: all 0.2s;
+  
 }
 
 .small_handle a:hover{
-  background-color: rgb(44, 24, 24);
   padding: 10px 15px;
   border-radius: 30px;
   margin: 5px 10px;
@@ -496,17 +541,37 @@ h3 {
 
 
 .small_handle a i{
-  margin: 3px;
+  margin: 4px;
 }
 
 .fb_handle{
   color: #4267B2;
 }
+.fb_handle:hover{
+  background-color: #4267B2;
+  color: white;
+}
 
 .ld_handle{
   color: #0077b5;
 }
+.ld_handle:hover{
+  background-color: #0077b5;
+  color: white;
+}
 
 .in_handle{
   color: #8a3ab9;
+}
+.in_handle:hover{
+  background-color: #8a3ab9;
+  color: white;
+}
+
+.gt_handle{
+  color: white;
+}
+.gt_handle:hover{
+  background-color: white;
+  color: black;
 }
