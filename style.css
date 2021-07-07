@@ -4,7 +4,9 @@
 }
 body{
     /* background-color: rgba(81, 85, 85)!important; */
-    background: linear-gradient(to bottom,rgba(81, 85, 85),rgb(77, 17, 17));
+    /* background: linear-gradient(to bottom,rgba(81, 85, 85),rgb(77, 17, 17)); */
+    background-image: url(img/wall.jpg);
+    background-attachment: fixed;
     color: rgb(234, 241, 241);
     margin: 0;
     font-size: 1rem;
@@ -312,24 +314,20 @@ h3 {
   font-family: 'Uchen', serif;
 }
 .section__title--edu {
-  color: rgb(255, 0, 0);
+  color: yellow;
   position: relative;
-  margin-bottom: 30px;
   text-align: center;
 } 
 .container{
-padding-top: 5rem;
+padding-top: 2rem;
 
-margin:30px;
+margin: 10px;
 }
-#education{
-	padding-top: 5rem;
-  }
-  
-  #education .active{
-	background-color: #c15554;
-	border-color: #c15554;
-  }
+
+/* .section__subtitle--edu{
+  margin-bottom: 10px;
+} */
+
 
 
 /*skills*/
