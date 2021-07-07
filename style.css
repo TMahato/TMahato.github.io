@@ -530,13 +530,18 @@ margin:30px;
 }
 
 @media screen and (max-width: 700px){
-    .contact-me{
-        flex-direction: column;
-        padding: 10px 10px;
-    }
-    .small_handle a{
-      display: block;
-    }
+  /* .contact-me{
+      flex-direction: column;
+      padding: 10px 10px;
+  }
+  .small_handle a{
+    display: block;
+  } */
+
+  .small_handle a{
+    margin-top: 10px;
+    padding: 0 10px;
+  }
 }
 
 
