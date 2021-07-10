@@ -5,8 +5,10 @@
 body{
     /* background-color: rgba(81, 85, 85)!important; */
     /* background: linear-gradient(to bottom,rgba(81, 85, 85),rgb(77, 17, 17)); */
-    background-image: url(img/wall.jpg);
-    background-attachment: fixed;
+    /* background-image: url(img/wall.jpg);
+    background-attachment: fixed; */
+
+    background: #495057!important;
     color: rgb(234, 241, 241);
     margin: 0;
     font-size: 1rem;
@@ -30,7 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background-image: linear-gradient(to right, rgb(166, 166, 166), rgba(81, 85, 85));
+  background-image: linear-gradient(to right, rgb(166, 166, 166), #495057);
 }
 
 .nav-logo {
@@ -142,7 +144,7 @@ img {
 /*--INtro--*/
 strong {
    font-weight: 700;
-   color:cyan;
+   color:#94d2bd;
   }
 
 
@@ -162,7 +164,7 @@ h3 {
 .section__title--intro {
   font-weight: 500;
   font-size: 3rem;
-  color:yellow;
+  color:#adb5bd;
   font-family: 'Uchen', serif;
 }
 
@@ -176,9 +178,10 @@ h3 {
 }
 
 .section__subtitle--intro{
-  background: #087462;
+  background: #006466;
   padding: .25em 1em;
-  color: antiquewhite;
+  color: white;
+  font-size: 1.5rem;
   margin-bottom: 1em;
   display: inline-block;
 }
@@ -249,7 +252,7 @@ h3 {
 
 
 #scroll-down a {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 #scroll-down a span {
   position: absolute;
@@ -310,13 +313,13 @@ h3 {
 }
 
 
-
 /* about */
 
 .about-me {
-  background-image: url(img/simple.jpg);
-  background-attachment: fixed;
-  background-color: rgb(54, 12, 12);
+  /* background-image: url(img/simple.jpg);
+  background-attachment: fixed; */
+  background-image: linear-gradient(to bottom, #495057 ,#343a40);
+
   background-size: cover;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -330,7 +333,7 @@ h3 {
 .section__title--edu {
   font-size: 2.2rem;
   font-weight: 500;
-  color: cyan;
+  color: yellow;
   position: relative;
 }
 
@@ -354,7 +357,7 @@ h3 {
   font-size: 1.5rem;
 }
 .service strong{
-  color: rgb(255, 68, 0);
+  color: #adb5bd;
 }
 
 @media (min-width: 800px) {
@@ -371,8 +374,8 @@ h3 {
 }
 
 .profile {
-  background-image: url(img/simple.jpg); 
-  background-color: rgb(77, 39, 26);
+  /* background-image: url(img/simple.jpg);  */
+  background-color: #343a40!important;
   font-size: 1.25rem;
   
   border: none;
@@ -380,7 +383,8 @@ h3 {
 
 .profile a {
   padding: 10px 0;
-  color:rgb(56, 224, 14);
+  color:#83c5be;
+  font-weight: 600;
   text-decoration: none;
   
 }
@@ -388,7 +392,7 @@ h3 {
   margin: 3px;
 }
 .profile a:hover{
-  color: coral;
+  color: #0099a7;
 }
 
 .neon-button{
@@ -459,14 +463,18 @@ h3 {
 }
 
 
+  
 
 /*Education*/
-.container {
+.container-fluid {
   /* background-image: url(img/simple.jpg); */
   /* background-attachment: fixed; */
   /* background-color: rgb(54, 12, 12); */
+  background: #343a40!important;
   background-size: cover;
+  
   color: rgb(255, 255, 255);
+  margin: 0;
   
   font-family: 'Uchen', serif;
 }
@@ -475,11 +483,12 @@ h3 {
   position: relative;
   text-align: center;
 } 
-.container{
+.container-fluid{
 padding-top: 2rem;
 
-margin: 10px;
+margin: 0;
 }
+
 
 /* .section__subtitle--edu{
   margin-bottom: 10px;
@@ -490,7 +499,7 @@ margin: 10px;
 /*skills*/
 .skill{
   background-color: rgb(126, 127, 128);
-  background-image: linear-gradient(to bottom, rgb(110, 31, 31) ,rgb(14, 28, 56)); 
+  background-image: linear-gradient(to bottom, #343a40 ,rgb(14, 28, 56)); 
   background-size: cover;
   color: cyan;
   font-family: 'Uchen', serif;
@@ -660,7 +669,7 @@ margin: 10px;
 .contact-me span a{
   text-decoration: none;
   font-size: 1.5rem;
-  color: rgb(175, 14, 14)
+  color: coral;
 }
 .contact-me span a:hover{
   color: rgb(223, 6, 132);
@@ -677,6 +686,13 @@ margin: 10px;
   
 }
 
+/* .small_handle a:hover{
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin: 5px 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+} */
 
 @media screen and (max-width: 700px){
   /* .contact-me{
@@ -701,42 +717,38 @@ margin: 10px;
 .fb_handle{
   color: #4267B2;
 }
-.fb_handle:hover{
+/* .fb_handle:hover{
   background-color: #4267B2;
   color: white;
-  border-radius: 30px;
-}
+} */
 
 .ld_handle{
   color: #0077b5;
 }
-.ld_handle:hover{
+/* .ld_handle:hover{
   background-color: #0077b5;
   color: white;
-  border-radius: 30px;
-}
+} */
 
 .in_handle{
   color: #8a3ab9;
 }
-.in_handle:hover{
+/* .in_handle:hover{
   background-color: #8a3ab9;
   color: white;
-  border-radius: 30px;
-}
+} */
 
 .gt_handle{
   color: white;
 }
-.gt_handle:hover{
+/* .gt_handle:hover{
   background-color: white;
   color: black;
-  border-radius: 30px;
-}
+} */
 
 /* Preloader */
 #preloader{
-  background: white url(img/load.gif) no-repeat center center;
+  background: whitesmoke url(img/load.gif) no-repeat center center;
   background-size: 30%;
   height: 100vh;
   width: 100%;
@@ -758,10 +770,9 @@ margin: 10px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: coral;
+  background: #adb5bd;
   box-shadow: 0 0 10px rgba(0,0,0,0.25);
-  color: black;
-  font-weight: bold;
+  color: #212529;
   border: none;
   outline: none;
   cursor: pointer;
