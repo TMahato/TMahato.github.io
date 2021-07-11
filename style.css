@@ -32,7 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  background-image: linear-gradient(to right, rgb(166, 166, 166), #495057);
+  background: #495057!important;
 }
 
 .nav-logo {
@@ -118,8 +118,8 @@ header {
 .header__hamburger::before,
 .header__hamburger::after {
   background: yellow;
-  width: 2em;
-  height: 3px;
+  width: 3em;
+  height: 4px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
 }
@@ -133,8 +133,8 @@ header {
   right: 0;
 }
 
-.header__hamburger::before { top: 6px; }
-.header__hamburger::after { bottom: 6px; }
+.header__hamburger::before { top: 8px; }
+.header__hamburger::after { bottom: 8px; }
 
 
 img {
@@ -197,7 +197,11 @@ h3 {
   border-radius:50%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
+  .header__nav-toggle {
+    padding: 5em;
+    padding-right:8em;
+  }
   .intro-me {
       display: grid;
       width: min-content;
@@ -610,6 +614,16 @@ margin: 0;
   }
 }  */
 
+
+/* projects */
+.git {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+  background-color: rgb(14, 28, 56)!important;
+  color: #a8dadc!important;
+}
+
 /* hobbies */
 .hobbies{
   background-image: url(img/hobbies.jpg);
@@ -748,7 +762,7 @@ margin: 0;
 
 /* Preloader */
 #preloader{
-  background: whitesmoke url(img/load.gif) no-repeat center center;
+  background: black url(img/load.gif) no-repeat center center;
   background-size: 30%;
   height: 100vh;
   width: 100%;

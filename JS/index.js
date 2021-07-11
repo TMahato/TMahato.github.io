@@ -15,13 +15,13 @@ navLinks.forEach(link => {
 //preloader
 var loader = document.getElementById("preloader");
 
-window.addEventListener("load",function(){
-    loader.style.display="none";
+window.addEventListener("load", function () {
+    loader.style.display = "none";
 })
 
 //Scroll-to-top
-const btnScrollToTop=document.querySelector("#btnScrollToTop");
-btnScrollToTop.addEventListener("click",function(){
+const btnScrollToTop = document.querySelector("#btnScrollToTop");
+btnScrollToTop.addEventListener("click", function () {
     window.scrollTo({
         top: 0,
         left: 0,
