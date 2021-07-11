@@ -335,10 +335,15 @@ h3 {
 .section__title--skill,
 .section__title--hobbies,
 .section__title--edu {
+  font-family: 'Encode Sans SC', sans-serif;
   font-size: 2.2rem;
-  font-weight: 500;
-  color: yellow;
+  font-weight: 900;
+  color: #ffb703;
   position: relative;
+}
+.section__title--skill,
+.section__title--edu {
+  padding-top: 10%;
 }
 
 .section__title--about::after {
@@ -361,7 +366,7 @@ h3 {
   font-size: 1.5rem;
 }
 .service strong{
-  color: #adb5bd;
+  color: #118ab2;
 }
 
 @media (min-width: 800px) {
@@ -483,7 +488,6 @@ h3 {
   font-family: 'Uchen', serif;
 }
 .section__title--edu {
-  color: yellow;
   position: relative;
   text-align: center;
 } 
@@ -509,7 +513,6 @@ margin: 0;
   font-family: 'Uchen', serif;
 }
  .section__title--skill {
-  color: rgb(204, 255, 0);
   position: relative;
   text-align: center;
 } 
@@ -617,12 +620,13 @@ margin: 0;
 
 /* projects */
 .git {
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 10%;
+  padding-bottom: 7%;
   padding-left: 4%;
   background-color: rgb(14, 28, 56)!important;
   color: #a8dadc!important;
 }
+
 
 /* hobbies */
 .hobbies{
@@ -636,8 +640,8 @@ margin: 0;
   font-family: 'Uchen', serif;
 }
 .section__title--hobbies {
-  color: rgb(255, 171, 14);
-  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .section__title--hobbies::after {
   content: '';
@@ -751,10 +755,10 @@ margin: 0;
   background-color: #8a3ab9;
   color: white;
 } */
-
+/* 
 .gt_handle{
   color: white;
-}
+} */
 /* .gt_handle:hover{
   background-color: white;
   color: black;
